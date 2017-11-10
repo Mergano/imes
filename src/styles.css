@@ -35,11 +35,11 @@ a img {
   color: #fff;
 }
 
-.android-search-box .mdl-textfield__input {
+.imes-search-box .mdl-textfield__input {
   color: rgba(0, 0, 0, 0.87);
 }
 
-.android-header .mdl-menu__container {
+.imes-header .mdl-menu__container {
   z-index: 50;
   margin: 0 !important;
 }
@@ -48,7 +48,7 @@ a img {
   width: auto;
 }
 
-.android-fab {
+.imes-fab {
   position: absolute;
   right: 20%;
   bottom: -26px;
@@ -57,40 +57,40 @@ a img {
   color: black !important;
 }
 
-.android-mobile-title {
+.imes-mobile-title {
   display: none !important;
 }
 
-.android-logo-image {
+.imes-logo-image {
   height: 30px;
 }
 
-.android-logo-image-mobile-nav {
+.imes-logo-image-mobile-nav {
   height: 50px;
   margin: 50px auto;
 }
 
-.android-header {
+.imes-header {
   overflow: visible;
   background-color: white;
 }
 
-.android-header .material-icons {
+.imes-header .material-icons {
   color: #767777 !important;
 }
 
-.android-header .mdl-layout__drawer-button {
+.imes-header .mdl-layout__drawer-button {
   background: transparent;
   color: #767777;
 }
 
-.android-header .mdl-navigation__link {
+.imes-header .mdl-navigation__link {
   color: #202020;
   font-weight: 700;
   font-size: 14px;
 }
 
-.android-navigation-container {
+.imes-navigation-container {
   /* Simple hack to make the overflow happen to the left instead... */
   direction: rtl;
   -webkit-order: 1;
@@ -100,7 +100,7 @@ a img {
   transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.android-navigation {
+.imes-navigation {
   /* ... and now make sure the content is actually LTR */
   direction: ltr;
   -webkit-justify-content: flex-end;
@@ -109,12 +109,12 @@ a img {
   width: 800px;
 }
 
-.android-search-box.is-focused+.android-navigation-container {
+.imes-search-box.is-focused+.imes-navigation-container {
   opacity: 0;
   width: 100px;
 }
 
-.android-navigation .mdl-navigation__link {
+.imes-navigation .mdl-navigation__link {
   display: inline-block;
   height: 60px;
   line-height: 68px;
@@ -122,11 +122,11 @@ a img {
   border-bottom: 4px solid transparent;
 }
 
-.android-navigation .mdl-navigation__link:hover {
+.imes-navigation .mdl-navigation__link:hover {
   border-bottom: 4px solid #ffd248;
 }
 
-.android-search-box {
+.imes-search-box {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -134,43 +134,43 @@ a img {
   margin-right: 16px;
 }
 
-.android-more-button {
+.imes-more-button {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.android-drawer {
+.imes-drawer {
   border-right: none;
 }
 
-.android-drawer-separator {
+.imes-drawer-separator {
   height: 1px;
   background-color: #dcdcdc;
   margin: 8px 0;
 }
 
-.android-drawer .mdl-navigation__link.mdl-navigation__link {
+.imes-drawer .mdl-navigation__link.mdl-navigation__link {
   font-size: 14px;
   color: #202020;
 }
 
-.android-drawer span.mdl-navigation__link.mdl-navigation__link {
+.imes-drawer span.mdl-navigation__link.mdl-navigation__link {
   color: #ffd248;
 }
 
-.android-drawer .mdl-layout-title {
+.imes-drawer .mdl-layout-title {
   position: relative;
   background: #ffd248;
   height: 160px;
 }
 
-.android-drawer .android-logo-image {
+.imes-drawer .imes-logo-image {
   position: absolute;
   bottom: 16px;
 }
 
-.android-be-together-section {
+.imes-be-together-section {
   position: relative;
   height: 800px;
   width: auto;
@@ -186,123 +186,123 @@ a img {
   font-weight: 500;
 }
 
-.android-slogan {
+.imes-slogan {
   font-size: 60px;
   padding-top: 160px;
 }
 
-.android-sub-slogan {
+.imes-sub-slogan {
   font-size: 21px;
   padding-top: 24px;
 }
 
-.android-create-character {
+.imes-create-character {
   font-size: 21px;
   padding-top: 400px;
 }
 
-.android-create-character a {
+.imes-create-character a {
   text-decoration: none;
   color: #767777;
   font-weight: 300;
 }
 
-.android-screen-section {
+.imes-screen-section {
   position: relative;
   padding-top: 60px;
   padding-bottom: 80px;
 }
 
-.android-screens {
+.imes-screens {
   text-align: right;
   width: 100%;
   white-space: nowrap;
   overflow-x: auto;
 }
 
-.android-screen {
+.imes-screen {
   text-align: center;
 }
 
-.android-screen .android-link {
+.imes-screen .imes-link {
   margin-top: 16px;
   display: block;
   z-index: 2;
 }
 
-.android-image-link {
+.imes-image-link {
   text-decoration: none;
 }
 
-.android-wear {
+.imes-wear {
   display: inline-block;
   width: 160px;
   margin-right: 32px;
 }
 
-.android-wear .android-screen-image {
+.imes-wear .imes-screen-image {
   width: 40%;
   z-index: 1;
 }
 
-.android-phone {
+.imes-phone {
   display: inline-block;
   width: 64px;
   margin-right: 48px;
 }
 
-.android-phone .android-screen-image {
+.imes-phone .imes-screen-image {
   width: 100%;
   z-index: 1;
 }
 
-.android-tablet {
+.imes-tablet {
   display: inline-block;
   width: 110px;
   margin-right: 64px;
 }
 
-.android-tablet .android-screen-image {
+.imes-tablet .imes-screen-image {
   width: 100%;
   z-index: 1;
 }
 
-.android-tablet .android-link {
+.imes-tablet .imes-link {
   display: block;
   z-index: 2;
 }
 
-.android-tv {
+.imes-tv {
   display: inline-block;
   width: 300px;
   margin-right: 80px;
 }
 
-.android-tv .android-screen-image {
+.imes-tv .imes-screen-image {
   width: 100%;
   z-index: 1;
 }
 
-.android-auto {
+.imes-auto {
   display: inline-block;
   width: 300px;
   overflow: hidden;
 }
 
-.android-auto .android-screen-image {
+.imes-auto .imes-screen-image {
   display: block;
   height: 300px;
   z-index: 1;
 }
 
-.android-wear-section {
+.imes-wear-section {
   position: relative;
   background: url('images/wear.png') center top no-repeat;
   background-size: cover;
   height: 800px;
 }
 
-.android-wear-band {
+.imes-wear-band {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -310,7 +310,7 @@ a img {
   background-color: #37474f;
 }
 
-.android-wear-band-text {
+.imes-wear-band-text {
   max-width: 800px;
   margin-left: 25%;
   padding: 24px;
@@ -318,141 +318,141 @@ a img {
   color: white;
 }
 
-.android-wear-band-text p {
+.imes-wear-band-text p {
   padding-top: 8px;
 }
 
-.android-link {
+.imes-link {
   text-decoration: none;
   color: #ffd248 !important;
 }
 
-.android-link:hover {
+.imes-link:hover {
   color: #7cb342 !important;
 }
 
-.android-link .material-icons {
+.imes-link .material-icons {
   position: relative;
   top: -1px;
   vertical-align: middle;
 }
 
-.android-alt-link {
+.imes-alt-link {
   text-decoration: none;
   color: #64ffda !important;
   font-size: 16px;
 }
 
-.android-alt-link:hover {
+.imes-alt-link:hover {
   color: #00bfa5 !important;
 }
 
-.android-alt-link .material-icons {
+.imes-alt-link .material-icons {
   position: relative;
   top: 6px;
 }
 
-.android-customized-section {
+.imes-customized-section {
   text-align: center;
 }
 
-.android-customized-section-text {
+.imes-customized-section-text {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
   padding: 80px 16px 0 16px;
 }
 
-.android-customized-section-text p {
+.imes-customized-section-text p {
   padding-top: 16px;
 }
 
-.android-customized-section-image {
+.imes-customized-section-image {
   background: url('images/devices.jpg') center top no-repeat;
   background-size: cover;
   height: 400px;
 }
 
-.android-more-section {
+.imes-more-section {
   padding: 80px 0;
   max-width: 1044px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.android-more-section .android-section-title {
+.imes-more-section .imes-section-title {
   margin-left: 12px;
   padding-bottom: 24px;
 }
 
-.android-card-container {}
+.imes-card-container {}
 
-.android-card-container .mdl-card__media {
+.imes-card-container .mdl-card__media {
   overflow: hidden;
   background: transparent;
 }
 
-.android-card-container .mdl-card__media img {
+.imes-card-container .mdl-card__media img {
   width: 100%;
 }
 
-.android-card-container .mdl-card__title {
+.imes-card-container .mdl-card__title {
   background: transparent;
   height: auto;
 }
 
-.android-card-container .mdl-card__title-text {
+.imes-card-container .mdl-card__title-text {
   color: black;
   height: auto;
 }
 
-.android-card-container .mdl-card__supporting-text {
+.imes-card-container .mdl-card__supporting-text {
   height: auto;
   color: black;
   padding-bottom: 56px;
 }
 
-.android-card-container .mdl-card__actions {
+.imes-card-container .mdl-card__actions {
   position: absolute;
   bottom: 0;
 }
 
-.android-card-container .mdl-card__actions a {
+.imes-card-container .mdl-card__actions a {
   border-top: none;
   font-size: 16px;
 }
 
-.android-footer {
+.imes-footer {
   background-color: #fafafa;
   position: relative;
 }
 
-.android-footer a:hover {
+.imes-footer a:hover {
   color: #ffd248;
 }
 
-.android-footer .mdl-mega-footer--top-section::after {
+.imes-footer .mdl-mega-footer--top-section::after {
   border-bottom: none;
 }
 
-.android-footer .mdl-mega-footer--middle-section::after {
+.imes-footer .mdl-mega-footer--middle-section::after {
   border-bottom: none;
 }
 
-.android-footer .mdl-mega-footer--bottom-section {
+.imes-footer .mdl-mega-footer--bottom-section {
   position: relative;
 }
 
-.android-footer .mdl-mega-footer--bottom-section a {
+.imes-footer .mdl-mega-footer--bottom-section a {
   margin-right: 2em;
 }
 
-.android-footer .mdl-mega-footer--right-section a .material-icons {
+.imes-footer .mdl-mega-footer--right-section a .material-icons {
   position: relative;
   top: 6px;
 }
 
-.android-link-menu:hover {
+.imes-link-menu:hover {
   cursor: pointer;
 }
 
@@ -460,13 +460,13 @@ a img {
 /**** Mobile layout ****/
 
 @media (max-width: 900px) {
-  .android-navigation-container {
+  .imes-navigation-container {
     display: none;
   }
-  .android-title {
+  .imes-title {
     display: none !important;
   }
-  .android-mobile-title {
+  .imes-mobile-title {
     display: block !important;
     position: absolute;
     left: calc(50% - 70px);
@@ -476,47 +476,47 @@ a img {
   /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
      consecutive "+" operators in some cases. Therefore, we need to use both
      here to cover all the bases. */
-  .android.android-search-box.is-focused~.android-mobile-title,
-  .android-search-box.is-focused+.android-navigation-container+.android-mobile-title {
+  .imes.imes-search-box.is-focused~.imes-mobile-title,
+  .imes-search-box.is-focused+.imes-navigation-container+.imes-mobile-title {
     opacity: 0;
   }
-  .android-more-button {
+  .imes-more-button {
     display: none;
   }
-  .android-search-box.is-focused {
+  .imes-search-box.is-focused {
     width: calc(100% - 48px);
   }
-  .android-search-box .mdl-textfield__expandable-holder {
+  .imes-search-box .mdl-textfield__expandable-holder {
     width: 100%;
   }
-  .android-be-together-section {
+  .imes-be-together-section {
     height: 350px;
   }
-  .android-slogan {
+  .imes-slogan {
     font-size: 26px;
     margin: 0 16px;
     padding-top: 24px;
   }
-  .android-sub-slogan {
+  .imes-sub-slogan {
     font-size: 16px;
     margin: 0 16px;
     padding-top: 8px;
   }
-  .android-create-character {
+  .imes-create-character {
     padding-top: 200px;
     font-size: 16px;
   }
-  .android-create-character img {
+  .imes-create-character img {
     height: 12px;
   }
-  .android-fab {
+  .imes-fab {
     display: none;
   }
-  .android-wear-band-text {
+  .imes-wear-band-text {
     margin-left: 0;
     padding: 16px;
   }
-  .android-footer .mdl-mega-footer--bottom-section {
+  .imes-footer .mdl-mega-footer--bottom-section {
     display: none;
   }
 }
