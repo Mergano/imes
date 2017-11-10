@@ -1,0 +1,19 @@
+{
+  "name": "imes-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mergano/imes-website.git"
+  },
+  "author": "Juk",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Mergano/imes-website/issues"
+  },
+  "homepage": "https://github.com/Mergano/imes-website#readme"
+}
