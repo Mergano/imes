@@ -65,6 +65,11 @@ a img {
   height: 30px;
 }
 
+.android-logo-image-mobile-nav {
+  height: 50px;
+  margin: 50px auto;
+}
+
 .android-header {
   overflow: visible;
   background-color: white;
