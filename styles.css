@@ -1,51 +1,44 @@
-/**
- * Copyright 2015 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-body {
-  margin: 0;
+.imes-screen,
+.imes-screens,
+.imes-wear-band {
+  text-align: center
 }
 
+.imes-alt-link,
+.imes-image-link,
+.imes-link {
+  text-decoration: none
+}
 
-/* Disable ugly boxes around images in IE10 */
+body {
+  margin: 0
+}
 
 a img {
-  border: 0px;
+  border: 0
 }
 
 ::-moz-selection {
-  background-color: #ffd248;
-  color: #fff;
+  background-color: #202020;
+  color: #fff
 }
 
 ::selection {
-  background-color: #ffd248;
-  color: #fff;
+  background-color: #202020;
+  color: #fff
 }
 
 .imes-search-box .mdl-textfield__input {
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, .87)
 }
 
 .imes-header .mdl-menu__container {
   z-index: 50;
-  margin: 0 !important;
+  margin: 0!important
 }
 
 .mdl-textfield--expandable {
-  width: auto;
+  width: auto
 }
 
 .imes-fab {
@@ -53,77 +46,75 @@ a img {
   right: 20%;
   bottom: -26px;
   z-index: 3;
-  background: #64ffda !important;
-  color: black !important;
+  background: #ffd248!important;
+  color: #000!important
 }
 
 .imes-mobile-title {
-  display: none !important;
+  display: none!important
 }
 
 .imes-logo-image {
-  height: 30px;
+  height: 30px
 }
 
 .imes-logo-image-mobile-nav {
   height: 50px;
-  margin: 50px auto;
+  margin: 50px auto
 }
 
 .imes-header {
   overflow: visible;
-  background-color: white;
+  background-color: #fff
 }
 
 .imes-header .material-icons {
-  color: #767777 !important;
+  color: #202020!important
 }
 
 .imes-header .mdl-layout__drawer-button {
-  background: transparent;
-  color: #767777;
+  background: 0 0;
+  color: #202020
 }
 
 .imes-header .mdl-navigation__link {
   color: #202020;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 14px
 }
 
 .imes-navigation-container {
-  /* Simple hack to make the overflow happen to the left instead... */
   direction: rtl;
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
   width: 500px;
-  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity .2s cubic-bezier(.4, 0, .2, 1), width .2s cubic-bezier(.4, 0, .2, 1)
 }
 
 .imes-navigation {
-  /* ... and now make sure the content is actually LTR */
   direction: ltr;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  width: 800px;
+  width: 800px
 }
 
 .imes-search-box.is-focused+.imes-navigation-container {
   opacity: 0;
-  width: 100px;
+  width: 100px
 }
 
 .imes-navigation .mdl-navigation__link {
   display: inline-block;
   height: 60px;
   line-height: 68px;
-  background-color: transparent !important;
-  border-bottom: 4px solid transparent;
+  background-color: transparent!important;
+  border-bottom: 4px solid transparent
 }
 
 .imes-navigation .mdl-navigation__link:hover {
-  border-bottom: 4px solid #ffd248;
+  border-bottom: 4px solid #ffd248
 }
 
 .imes-search-box {
@@ -131,183 +122,139 @@ a img {
   -ms-flex-order: 2;
   order: 2;
   margin-left: 16px;
-  margin-right: 16px;
+  margin-right: 16px
 }
 
 .imes-more-button {
   -webkit-order: 3;
   -ms-flex-order: 3;
-  order: 3;
+  order: 3
 }
 
 .imes-drawer {
-  border-right: none;
+  border-right: none
 }
 
 .imes-drawer-separator {
   height: 1px;
   background-color: #dcdcdc;
-  margin: 8px 0;
+  margin: 8px 0
 }
 
 .imes-drawer .mdl-navigation__link.mdl-navigation__link {
   font-size: 14px;
-  color: #202020;
+  color: #202020
 }
 
 .imes-drawer span.mdl-navigation__link.mdl-navigation__link {
-  color: #ffd248;
+  color: #ffd248
 }
 
 .imes-drawer .mdl-layout-title {
   position: relative;
   background: #ffd248;
   height: 160px;
+  text-align: center;
+  padding: 0!important
 }
 
 .imes-drawer .imes-logo-image {
   position: absolute;
-  bottom: 16px;
+  bottom: 16px
 }
 
 .imes-be-together-section {
   position: relative;
   height: 800px;
   width: auto;
-  background-color: #f3f3f3;
-  background: url('images/slide02.png') center 30% no-repeat;
-  background-size: cover;
+  background: url(images/cover-page.svg) center 30% no-repeat;
+  background-size: cover
 }
 
 .logo-font {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   line-height: 1;
-  color: #767777;
-  font-weight: 500;
+  color: #202020;
+  font-weight: 500
 }
 
 .imes-slogan {
   font-size: 60px;
-  padding-top: 160px;
+  padding-top: 160px
 }
 
 .imes-sub-slogan {
   font-size: 21px;
-  padding-top: 24px;
+  padding-top: 24px
 }
 
 .imes-create-character {
   font-size: 21px;
-  padding-top: 400px;
+  padding-top: 400px
 }
 
 .imes-create-character a {
   text-decoration: none;
-  color: #767777;
-  font-weight: 300;
+  color: #202020;
+  font-weight: 300
 }
 
 .imes-screen-section {
   position: relative;
   padding-top: 60px;
-  padding-bottom: 80px;
+  padding-bottom: 80px
 }
 
 .imes-screens {
-  text-align: right;
   width: 100%;
   white-space: nowrap;
-  overflow-x: auto;
-}
-
-.imes-screen {
-  text-align: center;
+  overflow-x: auto
 }
 
 .imes-screen .imes-link {
   margin-top: 16px;
   display: block;
-  z-index: 2;
-}
-
-.imes-image-link {
-  text-decoration: none;
+  z-index: 2
 }
 
 .imes-wear {
   display: inline-block;
   width: 160px;
-  margin-right: 32px;
-}
-
-.imes-wear .imes-screen-image {
-  width: 40%;
-  z-index: 1;
-}
-
-.imes-phone {
-  display: inline-block;
-  width: 64px;
-  margin-right: 48px;
-}
-
-.imes-phone .imes-screen-image {
-  width: 100%;
-  z-index: 1;
-}
-
-.imes-tablet {
-  display: inline-block;
-  width: 110px;
-  margin-right: 64px;
-}
-
-.imes-tablet .imes-screen-image {
-  width: 100%;
-  z-index: 1;
-}
-
-.imes-tablet .imes-link {
-  display: block;
-  z-index: 2;
-}
-
-.imes-tv {
-  display: inline-block;
-  width: 300px;
-  margin-right: 80px;
-}
-
-.imes-tv .imes-screen-image {
-  width: 100%;
-  z-index: 1;
+  margin-right: 32px
 }
 
 .imes-auto {
   display: inline-block;
-  width: 300px;
+  width: auto;
   overflow: hidden;
+  margin: 40px 40px 0
 }
 
 .imes-auto .imes-screen-image {
   display: block;
   height: 300px;
   z-index: 1;
+  transform: scale(1)
+}
+
+.imes-screen-image:hover {
+  transform: scale(1.2);
+  height: 300px;
+  width: auto
 }
 
 .imes-wear-section {
   position: relative;
-  background: url('images/wear.png') center top no-repeat;
+  background: url(images/machine.jpg) center center no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 700px
 }
 
 .imes-wear-band {
   position: absolute;
   bottom: 0;
   width: 100%;
-  text-align: center;
-  background-color: #37474f;
+  background-color: rgba(15, 15, 15, .9)
 }
 
 .imes-wear-band-text {
@@ -315,208 +262,192 @@ a img {
   margin-left: 25%;
   padding: 24px;
   text-align: left;
-  color: white;
+  color: #fff
 }
 
 .imes-wear-band-text p {
-  padding-top: 8px;
+  padding-top: 8px
 }
 
 .imes-link {
-  text-decoration: none;
-  color: #ffd248 !important;
+  color: #ffd248!important
 }
 
 .imes-link:hover {
-  color: #7cb342 !important;
+  color: #202020!important;
+  background-color: transparent!important
 }
 
 .imes-link .material-icons {
   position: relative;
   top: -1px;
-  vertical-align: middle;
+  vertical-align: middle
 }
 
 .imes-alt-link {
-  text-decoration: none;
-  color: #64ffda !important;
-  font-size: 16px;
+  color: #ffd248!important;
+  font-size: 16px
 }
 
 .imes-alt-link:hover {
-  color: #00bfa5 !important;
+  color: #FFF!important
 }
 
 .imes-alt-link .material-icons {
   position: relative;
-  top: 6px;
+  top: 6px
 }
 
 .imes-customized-section {
-  text-align: center;
+  text-align: center
 }
 
 .imes-customized-section-text {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  padding: 80px 16px 0 16px;
+  padding: 80px 16px
 }
 
 .imes-customized-section-text p {
-  padding-top: 16px;
+  padding-top: 16px
 }
 
 .imes-customized-section-image {
-  background: url('images/devices.jpg') center top no-repeat;
+  background: url(images/sensor.jpg) center top no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 400px
 }
 
 .imes-more-section {
   padding: 80px 0;
   max-width: 1044px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto
 }
 
 .imes-more-section .imes-section-title {
   margin-left: 12px;
-  padding-bottom: 24px;
+  padding-bottom: 24px
 }
-
-.imes-card-container {}
 
 .imes-card-container .mdl-card__media {
   overflow: hidden;
-  background: transparent;
+  background: 0 0
 }
 
 .imes-card-container .mdl-card__media img {
-  width: 100%;
+  width: 100%
 }
 
 .imes-card-container .mdl-card__title {
-  background: transparent;
-  height: auto;
+  background: 0 0;
+  height: auto
 }
 
 .imes-card-container .mdl-card__title-text {
-  color: black;
-  height: auto;
+  color: #000;
+  height: auto
 }
 
 .imes-card-container .mdl-card__supporting-text {
   height: auto;
-  color: black;
-  padding-bottom: 56px;
+  color: #000;
+  padding-bottom: 56px
 }
 
 .imes-card-container .mdl-card__actions {
   position: absolute;
-  bottom: 0;
+  bottom: 0
+}
+
+.imes-footer,
+.imes-footer .mdl-mega-footer--bottom-section {
+  position: relative
 }
 
 .imes-card-container .mdl-card__actions a {
   border-top: none;
-  font-size: 16px;
+  font-size: 16px
 }
 
 .imes-footer {
-  background-color: #fafafa;
-  position: relative;
+  background-color: #fafafa
 }
 
 .imes-footer a:hover {
-  color: #ffd248;
+  color: #202020
 }
 
+.imes-footer .mdl-mega-footer--middle-section::after,
 .imes-footer .mdl-mega-footer--top-section::after {
-  border-bottom: none;
-}
-
-.imes-footer .mdl-mega-footer--middle-section::after {
-  border-bottom: none;
-}
-
-.imes-footer .mdl-mega-footer--bottom-section {
-  position: relative;
+  border-bottom: none
 }
 
 .imes-footer .mdl-mega-footer--bottom-section a {
-  margin-right: 2em;
+  margin-right: 2em
 }
 
 .imes-footer .mdl-mega-footer--right-section a .material-icons {
   position: relative;
-  top: 6px;
+  top: 6px
 }
 
 .imes-link-menu:hover {
-  cursor: pointer;
+  cursor: pointer
 }
 
-
-/**** Mobile layout ****/
-
-@media (max-width: 900px) {
+@media (max-width:900px) {
   .imes-navigation-container {
-    display: none;
+    display: none
   }
   .imes-title {
-    display: none !important;
+    display: none!important
   }
   .imes-mobile-title {
-    display: block !important;
+    display: block!important;
     position: absolute;
     left: calc(50% - 70px);
     top: 12px;
-    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity .2s cubic-bezier(.4, 0, .2, 1)
   }
-  /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
-     consecutive "+" operators in some cases. Therefore, we need to use both
-     here to cover all the bases. */
-  .imes.imes-search-box.is-focused~.imes-mobile-title,
-  .imes-search-box.is-focused+.imes-navigation-container+.imes-mobile-title {
-    opacity: 0;
-  }
+  .imes-fab,
+  .imes-footer .mdl-mega-footer--bottom-section,
   .imes-more-button {
-    display: none;
+    display: none
+  }
+  .imes-search-box.is-focused+.imes-navigation-container+.imes-mobile-title,
+  .imes.imes-search-box.is-focused~.imes-mobile-title {
+    opacity: 0
   }
   .imes-search-box.is-focused {
-    width: calc(100% - 48px);
+    width: calc(100% - 48px)
   }
   .imes-search-box .mdl-textfield__expandable-holder {
-    width: 100%;
+    width: 100%
   }
   .imes-be-together-section {
-    height: 350px;
+    height: 350px
   }
   .imes-slogan {
     font-size: 26px;
     margin: 0 16px;
-    padding-top: 24px;
+    padding-top: 24px
   }
   .imes-sub-slogan {
     font-size: 16px;
     margin: 0 16px;
-    padding-top: 8px;
+    padding-top: 8px
   }
   .imes-create-character {
     padding-top: 200px;
-    font-size: 16px;
+    font-size: 16px
   }
   .imes-create-character img {
-    height: 12px;
-  }
-  .imes-fab {
-    display: none;
+    height: 12px
   }
   .imes-wear-band-text {
     margin-left: 0;
-    padding: 16px;
-  }
-  .imes-footer .mdl-mega-footer--bottom-section {
-    display: none;
+    padding: 16px
   }
 }
