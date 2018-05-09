@@ -5,8 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>IMES - Your Industry Helper</title>
-  <meta name="generator" content="Polymer" />
-  <meta name="description" content="Intelligent Manufacturing Execution Systems for Small-Midsize industry" />
+  <meta name="description" content="Open Source Intelligent Manufacturing Execution Systems for small-midsize jobshop industry" />
   <meta name="theme-color" content="#202020" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -26,16 +25,14 @@
   <link rel="apple-touch-icon" sizes="256x256" href="images/manifest/icon-256x256.png" />
   <link rel="apple-touch-icon" sizes="512x512" href="images/manifest/icon-512x512.png" />
   <!-- Page styles -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,thin,light&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,thin,light">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
-  <link rel="stylesheet" href="styles.min.css">
-  <link rel="shortcut icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="images/favicon.png"/>
 </head>
-
 <body>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
     <div class="imes-header mdl-layout__header mdl-layout__header--waterfall">
       <div class="mdl-layout__header-row">
         <span class="imes-title mdl-layout-title">
@@ -55,10 +52,10 @@
         <div class="imes-navigation-container">
           <nav class="imes-navigation mdl-navigation">
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#explore">Explore</a>
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#price">Pricing</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://github.com/jukbot/smart-industry ">Project</a>
             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#test">Test Drive</a>
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#contact">Contact</a>
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" target="_blank" rel="noopener" href="https://smart-mes.firebaseapp.com/login">Login</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="https://www.facebook.com/imesapp/">Contact</a>
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" target="_blank" rel="noopener" href="https://smart-mes.firebaseapp.com/login">Try IMES</a>
           </nav>
         </div>
         <span class="imes-mobile-title mdl-layout-title">
@@ -69,26 +66,26 @@
 
     <div class="imes-drawer mdl-layout__drawer">
       <span class="mdl-layout-title">
-        <img class="imes-logo-image-mobile-nav" src="images/logo-white.svg">
+        <img class="imes-logo-image-mobile-nav" src="images/logo.svg">
       </span>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="#explore">
-          <i class="material-icons">explore</i> Explore</a>
-        <a class="mdl-navigation__link" href="#pricing">
-          <i class="material-icons">attach_money</i> Pricing</a>
+          <i class="material-icons">explore</i>  Explore</a>
+        <a class="mdl-navigation__link" href="#project">
+          <i class="material-icons">code</i>  Project</a>
         <a class="mdl-navigation__link" href="#test">
-          <i class="material-icons">attach_money</i> Test Drive</a>
+          <i class="material-icons">flight</i>  Test Drive</a>
         <a class="mdl-navigation__link" href="#contact">
-          <i class="material-icons">call</i> Contact</a>
+          <i class="material-icons">call</i>  Contact</a>
         <a class="mdl-navigation__link" target="_blank" rel="noopener" href="https://smart-mes.firebaseapp.com/login">
-          <i class="material-icons">vpn_key</i> Login</a>
+          <i class="material-icons">touch_app</i>  Try IMES</a>
         <div class="imes-drawer-separator"></div>
         <a class="mdl-navigation__link" href="#blog">
-          <i class="material-icons">rss_feed</i> Official blog</a>
+          <i class="material-icons">rss_feed</i>  Official blog</a>
         <a class="mdl-navigation__link" href="#document">
-          <i class="material-icons">insert_drive_file</i> Documentation</a>
+          <i class="material-icons">insert_drive_file</i>  Documentation</a>
         <a class="mdl-navigation__link" target="_blank" href="https://www.facebook.com/imesapp/">
-          <i class="material-icons">link</i> Facebook Page</a>
+          <i class="material-icons">link</i>  Facebook Page</a>
       </nav>
     </div>
 
@@ -101,7 +98,7 @@
       </div>
       <div class="imes-screen-section mdl-typography--text-center">
         <a name="screens"></a>
-        <div class="imes-section-title mdl-typography--display-1">Our Solutions</div>
+        <div class="imes-section-title mdl-typography--display-1">Explore Solutions</div>
         <div class="c">
           <div class="imes-auto imes-screen">
             <a class="imes-image-link" href="#">
@@ -139,7 +136,9 @@
           <p class="mdl-typography--font-light mdl-typography--subhead">
             Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
             <br>
-            <a href="https://smart-mes.firebaseapp.com/login" target="_blank" class="imes-link mdl-typography--font-light">Start design your workflow</a>
+            <a href="https://smart-mes.firebaseapp.com/login" target="_blank"  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect imes-start-btn imes-button">
+              Getting Started your workflow
+            </a>
           </p>
         </div>
         <div class="imes-customized-section-image"></div>
@@ -149,7 +148,7 @@
         <div class="imes-card-container mdl-grid">
           <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
             <div class="mdl-card__media">
-              <img src="images/more-from-1.jpg">
+              <img alt="Plan image" src="images/more-from-1.jpg">
             </div>
             <div class="mdl-card__title">
               <h4 class="mdl-card__title-text">Planning make it easy</h4>
@@ -167,7 +166,7 @@
 
           <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
             <div class="mdl-card__media">
-              <img src="images/more-from-2.jpg">
+              <img alt="factory monitoring room" src="images/more-from-2.jpg">
             </div>
             <div class="mdl-card__title">
               <h4 class="mdl-card__title-text">Create your own system</h4>
@@ -185,7 +184,7 @@
 
           <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
             <div class="mdl-card__media">
-              <img src="images/more-from-3.jpg">
+              <img alt="" src="images/more-from-3.jpg">
             </div>
             <div class="mdl-card__title">
               <h4 class="mdl-card__title-text">Keep up your productivity</h4>
@@ -201,21 +200,76 @@
               </a>
             </div>
           </div>
+        </div>
+        <div class="imes-section-title mdl-typography--display-1">Explore Our Use Cases</div>
+        <div class="imes-card-container mdl-grid">
+          <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <img src="images/bed-factory.jpg">
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">Bed Factory</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">Find out more the implementation of IMES software in Subsuwan Engineering &amp; Coating Co., Ltd. for improving Manufacturing workflow.</span>
+            </div>
+            <div class="mdl-card__actions">
+              <a class="imes-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="#">
+                Learn more
+                <i class="material-icons">chevron_right</i>
+              </a>
+            </div>
+          </div>
 
+          <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <img src="images/use-case-2.jpg">
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">N/A</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">N/A</span>
+            </div>
+            <div class="mdl-card__asctions">
+              <a class="imes-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="#">
+                Learn more
+                <i class="material-icons">chevron_right</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+            <div class="mdl-card__media">
+              <img src="images/use-case-2.jpg">
+            </div>
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text">N/A</h4>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">N/A</span>
+            </div>
+            <div class="mdl-card__actions">
+              <a class="imes-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="#">
+                Test Drive
+                <i class="material-icons">chevron_right</i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
       <footer class="imes-footer mdl-mega-footer">
         <div class="mdl-mega-footer--top-section">
-          <p class="mdl-typography--font-light">IMES Appication © 2017 SIT KMUTT</p>
+          <p class="mdl-typography--font-light">IMES © 2018 SIT KMUTT</p>
         </div>
 
         <div class="mdl-mega-footer--bottom-section">
           <div class="mdl-mega-footer--left-section">
-            <a class="imes-link mdl-typography--font-light" target="_blank" href="https://github.com/jukbot/smart-industry">Contribute us</a>
+            <a class="imes-link mdl-typography--font-light" target="_blank" href="https://github.com/jukbot/smart-industry">Contribute Project</a>
             <a class="imes-link mdl-typography--font-light" target="_blank" href="https://www.facebook.com/imesapp/">Facebook</a>
-            <a class="imes-link mdl-typography--font-light" target="_blank" href="https://smart-mes.firebaseapp.com/term">Privacy Policy</a>
-            <a class="imes-link mdl-typography--font-light" target="_blank" href="https://www.freepik.com">Logo Designed by Freepik</a>
+            <a class="imes-link mdl-typography--font-light" target="_blank" href="https://smart-mes.firebaseapp.com/term">Terms of Service</a>
+            <a class="imes-link mdl-typography--font-light" target="_blank" href="https://www.freepik.com">Logo by Freepik</a>
           </div>
 
           <div class="mdl-mega-footer--right-section">

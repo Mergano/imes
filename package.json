@@ -11,8 +11,5 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.4"
-  },
-  "devDependencies": {
-    "copyfiles": "^1.2.0"
   }
 }
