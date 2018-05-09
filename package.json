@@ -2,13 +2,12 @@
   "name": "imes-websote",
   "version": "1.0.0",
   "description": "level your industry",
-  "main": "index.js",
+  "main": "server.js",
+  "author": "IMES",
+  "license": "Apache-2.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "copyfiles -u 1 src/**/**/* src/**/* src/* build && node server.js"
+      "build": "workbox generateSW ./workbox-config.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.15.4"
   }
