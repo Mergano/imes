@@ -6,38 +6,48 @@ if (workbox) {
   console.log(`Workbox didn't load 😬`);
 }
 
-workbox.router.registerRoute('https://fonts.gstatic.com/(.*)',
+workbox.setConfig({
+  debug: false
+});
+
+workbox.routing.registerRoute(
+  new RegExp('https://fonts.gstatic.com/(.*)'),
   workbox.strategies.cacheFirst({
-    cacheName: 'google-fonts',
-    cacheExpiration: {
-      maxEntries: 30
-    },
-    cacheableResponse: {
-      statuses: [0, 200]
-    }
-  })
+    cacheName: 'google-font',
+    plugins: [
+      new workbox.expiration.Plugin({
+        maxEntries: 30,
+      }),
+    ],
+  }),
 );
 
 workbox.routing.registerRoute(
-  new RegExp(/.*\.(?:woff2)$/),
+  /.*\.(?:png|gif|jpg|jpeg|svg)$/,
+  workbox.strategies.cacheFirst({
+    cacheName: 'images-cache',
+    plugins: [
+      new workbox.expiration.Plugin({
+        maxEntries: 60,
+        maxAgeSeconds: 7 * 24 * 60 * 60, // 7 Days
+      }),
+    ],
+  }),
+);
+
+workbox.routing.registerRoute(/.*\.(?:woff2)$/,
   workbox.strategies.staleWhileRevalidate({
     cacheName: 'font-cache',
   })
-)
-
-workbox.router.registerRoute(/.*\.(?:png|jpeg|jpg|svg)$/,
-  workbox.strategies.cacheFirst({
-    cacheName: 'images-cache'
-  })
 );
 
-workbox.router.registerRoute(/.*\.(?:js|css)$/,
+workbox.routing.registerRoute(/.*\.(?:js|css)$/,
   workbox.strategies.staleWhileRevalidate({
     cacheName: 'static-resources'
   })
 );
 
-workbox.router.registerRoute(/.*(?:gstatic)\.com.*$/,
+workbox.routing.registerRoute(/.*(?:gstatic)\.com.*$/,
   workbox.strategies.staleWhileRevalidate({
     cacheName: 'gstatic-cache'
   })
