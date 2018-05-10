@@ -6,9 +6,10 @@
   "author": "IMES",
   "license": "Apache-2.0",
   "scripts": {
-      "build": "workbox generateSW ./workbox-config.js"
+    "build": "workbox generateSW ./workbox-config.js"
   },
   "dependencies": {
+    "eslint": "^4.19.1",
     "express": "^4.15.4"
   }
 }

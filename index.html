@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>IMES - Your Industry Helper</title>
-  <meta name="description" content="Open Source Intelligent Manufacturing Execution Systems for small-midsize jobshop industry" />
+  <meta name="description" content="Open Source Intelligent Manufacturing Execution Systems for small-midsize jobshop industry"
+  />
   <meta name="theme-color" content="#202020" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -25,15 +26,16 @@
   <link rel="apple-touch-icon" sizes="256x256" href="images/manifest/icon-256x256.png" />
   <link rel="apple-touch-icon" sizes="512x512" href="images/manifest/icon-512x512.png" />
   <!-- Page styles -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,thin,light">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" href="images/favicon.png"/>
+  <link rel="stylesheet" href="css/roboto.css">
+  <link rel="stylesheet" href="css/material-icons.css">
+  <link rel="stylesheet" href="css/material.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="images/favicon.png" />
 </head>
+
 <body>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <div class="imes-header mdl-layout__header mdl-layout__header--waterfall">
+    <header class="imes-header mdl-layout__header mdl-layout__header--waterfall">
       <div class="mdl-layout__header-row">
         <span class="imes-title mdl-layout-title">
           <img class="imes-logo-image" src="images/logo.svg">
@@ -62,7 +64,7 @@
           <img class="imes-logo-image" src="images/logo.svg">
         </span>
       </div>
-    </div>
+    </header>
 
     <div class="imes-drawer mdl-layout__drawer">
       <span class="mdl-layout-title">
@@ -70,22 +72,22 @@
       </span>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="#explore">
-          <i class="material-icons">explore</i>  Explore</a>
+          <i class="material-icons">explore</i> Explore</a>
         <a class="mdl-navigation__link" href="#project">
-          <i class="material-icons">code</i>  Project</a>
+          <i class="material-icons">code</i> Project</a>
         <a class="mdl-navigation__link" href="#test">
-          <i class="material-icons">flight</i>  Test Drive</a>
+          <i class="material-icons">flight</i> Test Drive</a>
         <a class="mdl-navigation__link" href="#contact">
-          <i class="material-icons">call</i>  Contact</a>
+          <i class="material-icons">call</i> Contact</a>
         <a class="mdl-navigation__link" target="_blank" rel="noopener" href="https://smart-mes.firebaseapp.com/login">
-          <i class="material-icons">touch_app</i>  Try IMES</a>
+          <i class="material-icons">touch_app</i> Try IMES</a>
         <div class="imes-drawer-separator"></div>
         <a class="mdl-navigation__link" href="#blog">
-          <i class="material-icons">rss_feed</i>  Official blog</a>
+          <i class="material-icons">rss_feed</i> Official blog</a>
         <a class="mdl-navigation__link" href="#document">
-          <i class="material-icons">insert_drive_file</i>  Documentation</a>
+          <i class="material-icons">insert_drive_file</i> Documentation</a>
         <a class="mdl-navigation__link" target="_blank" href="https://www.facebook.com/imesapp/">
-          <i class="material-icons">link</i>  Facebook Page</a>
+          <i class="material-icons">link</i> Facebook Page</a>
       </nav>
     </div>
 
@@ -136,7 +138,7 @@
           <p class="mdl-typography--font-light mdl-typography--subhead">
             Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
             <br>
-            <a href="https://smart-mes.firebaseapp.com/login" target="_blank"  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect imes-start-btn imes-button">
+            <a href="https://smart-mes.firebaseapp.com/login" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect imes-start-btn imes-button">
               Getting Started your workflow
             </a>
           </p>
@@ -211,7 +213,8 @@
               <h4 class="mdl-card__title-text">Bed Factory</h4>
             </div>
             <div class="mdl-card__supporting-text">
-              <span class="mdl-typography--font-light mdl-typography--subhead">Find out more the implementation of IMES software in Subsuwan Engineering &amp; Coating Co., Ltd. for improving Manufacturing workflow.</span>
+              <span class="mdl-typography--font-light mdl-typography--subhead">Find out more the implementation of IMES software in Subsuwan Engineering &amp; Coating Co., Ltd. for improving
+                Manufacturing workflow.</span>
             </div>
             <div class="mdl-card__actions">
               <a class="imes-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="#">
@@ -282,17 +285,21 @@
       </footer>
     </div>
   </div>
-  <script async src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script async src="js/material.min.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./sw.js')
-        .then(function (registration) {
-          console.info('Service Worker registration successful with scope: ',
-            registration.scope);
-        })
-        .catch(function (err) {
-          console.error('Service Worker registration failed: ', err);
-        });
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function (registration) {
+            console.info(
+              'Service Worker registration successful with scope: ',
+              registration.scope);
+          })
+          .catch(function (err) {
+            console.error('Service Worker registration failed: ',
+              err);
+          });
+      });
     }
   </script>
 </body>

@@ -1,7 +1,19 @@
 module.exports = {
-  "globDirectory": "./",
-  "globPatterns": [
-    "**/*.{jpg,svg,png,html,json,md,js,css}"
+  globDirectory: "./",
+  globPatterns: [
+    "**/*.{jpg,svg,png,html,json,md,js,css, woff2}"
   ],
-  "swDest": "/Users/Juk/OneDrive/Projects/imes-website/sw.js"
+  swDest: "./sw.js",
+  runtimeCaching: [{
+    // Match any request ends with .png, .jpg, .jpeg or .svg.
+    urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
+    // Apply a cache-first strategy.
+    handler: 'cacheFirst',
+    options: {
+      // Only cache 10 images.
+      expiration: {
+        maxEntries: 10,
+      },
+    },
+  }, ]
 };

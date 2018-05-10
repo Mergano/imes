@@ -34,16 +34,15 @@ a img {
 
 .imes-header .mdl-menu__container {
   z-index: 50;
-  margin: 0!important;
+  margin: 0 !important;
 }
 
 .mdl-textfield--expandable {
   width: auto;
 }
 
-
 .imes-mobile-title {
-  display: none!important;
+  display: none !important;
 }
 
 .imes-logo-image {
@@ -61,7 +60,7 @@ a img {
 }
 
 .imes-header .material-icons {
-  color: #202020!important;
+  color: #202020 !important;
 }
 
 .imes-header .mdl-layout__drawer-button {
@@ -101,7 +100,7 @@ a img {
   display: inline-block;
   height: 60px;
   line-height: 68px;
-  background-color: transparent!important;
+  background-color: transparent !important;
   border-bottom: 4px solid transparent;
 }
 
@@ -147,7 +146,7 @@ a img {
   background: #ffffff;
   height: 160px;
   text-align: center;
-  padding: 0!important;
+  padding: 0 !important;
 }
 
 .imes-drawer .imes-logo-image {
@@ -159,7 +158,7 @@ a img {
   position: relative;
   height: 800px;
   width: auto;
-  background: url(images/cover-page.svg) center 30% no-repeat;
+  background: url(../images/cover-page.svg) center 30% no-repeat;
   background-size: cover;
 }
 
@@ -237,7 +236,7 @@ a img {
 
 .imes-wear-section {
   position: relative;
-  background: url(images/machine.jpg) center center no-repeat;
+  background: url(../images/machine.jpg) center center no-repeat;
   background-size: cover;
   height: 700px;
 }
@@ -262,12 +261,12 @@ a img {
 }
 
 .imes-button {
-  background-color: #ffd248!important;
+  background-color: #ffd248 !important;
   color: #FFFFFF;
 }
 
 .imes-button:hover {
-  background-color: #202020!important;
+  background-color: #202020 !important;
   color: #FFFFFF;
 }
 
@@ -276,12 +275,12 @@ a img {
 }
 
 .imes-link {
-  color: #ffd248!important;
+  color: #ffd248 !important;
 }
 
 .imes-link:hover {
-  color: #202020!important;
-  background-color: transparent!important;
+  color: #202020 !important;
+  background-color: transparent !important;
 }
 
 .imes-link .material-icons {
@@ -291,12 +290,12 @@ a img {
 }
 
 .imes-alt-link {
-  color: #ffd248!important;
+  color: #ffd248 !important;
   font-size: 1rem;
 }
 
 .imes-alt-link:hover {
-  color: #FFF!important;
+  color: #FFF !important;
 }
 
 .imes-alt-link .material-icons {
@@ -320,7 +319,7 @@ a img {
 }
 
 .imes-customized-section-image {
-  background: url(images/sensor.jpg) center top no-repeat;
+  background: url(../images/sensor.jpg) center top no-repeat;
   background-size: cover;
   height: 400px;
 }
@@ -408,10 +407,10 @@ a img {
     display: none;
   }
   .imes-title {
-    display: none!important;
+    display: none !important;
   }
   .imes-mobile-title {
-    display: block!important;
+    display: block !important;
     position: absolute;
     left: calc(50% - 70px);
     top: 12px;
